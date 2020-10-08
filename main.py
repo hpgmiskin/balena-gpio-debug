@@ -57,6 +57,9 @@ def main():
         logger.info("drive output pin %s to state %s", gpio_pin, DRIVEN_STATE)
         gpio.output(gpio_pin, DRIVEN_STATE)
         time.sleep(SLEEP_DELAY)
+    while True:
+        logger.info("main script complete now sleep forever")
+        time.sleep(60 * 5)
 
 
 if __name__ == "__main__":
